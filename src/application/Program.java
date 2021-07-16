@@ -8,6 +8,7 @@ public class Program {
 
 		Position pos = new boardgame.Position(3, 4);
 		System.out.println(pos);
+		System.out.println("test");
 	}
 
 }
