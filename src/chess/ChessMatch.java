@@ -9,7 +9,9 @@ import boardgame.Piece;
 import boardgame.Position;
 import chess.pieces.Bishop;
 import chess.pieces.King;
+import chess.pieces.Knight;
 import chess.pieces.Pawn;
+import chess.pieces.Queen;
 import chess.pieces.Rook;
 
 public class ChessMatch {
@@ -203,6 +205,9 @@ public class ChessMatch {
         placeNewPiece('h', 2, new Pawn(board, Color.WHITE));
         placeNewPiece('c', 1, new Bishop(board, Color.WHITE));
         placeNewPiece('f', 1, new Bishop(board, Color.WHITE));
+        placeNewPiece('b', 1, new Knight(board, Color.WHITE));
+        placeNewPiece('g', 1, new Knight(board, Color.WHITE));
+        placeNewPiece('d', 1, new Queen(board, Color.WHITE));
 
         placeNewPiece('a', 8, new Rook(board, Color.YELLOW));
         placeNewPiece('e', 8, new King(board, Color.YELLOW));
@@ -217,5 +222,8 @@ public class ChessMatch {
         placeNewPiece('h', 7, new Pawn(board, Color.YELLOW));
         placeNewPiece('c', 8, new Bishop(board, Color.YELLOW));
         placeNewPiece('f', 8, new Bishop(board, Color.YELLOW));
+        placeNewPiece('b', 8, new Knight(board, Color.YELLOW));
+        placeNewPiece('g', 8, new Knight(board, Color.YELLOW));
+        placeNewPiece('d', 8, new Queen(board, Color.YELLOW));
 	}
 }
